@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIYMann Ecommerce Website</title>
+
+   <!-- Font Awesome CDN -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+   <script src="https://kit.fontawesome.com/0b067f3f94.js" crossorigin="anonymous"></script>
+
+   <!--Custom CSS Stylesheet-->
+   <link rel="stylesheet" href="./CSS/style.css">
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Assets/Logo Landscape (Bebas Neue) -Best.png" width="125"  alt="Official DIYMann Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="">Products +</a>
+                      <ul class="dropdown">
+                        <li><a href="./All_Products.html">All Products</a></li>
+                        <li><a href="./Featured_Products.html">Featured</a></li>
+                        <li><a href="./Computing_Products.html">Computing</a></li>
+                        <li><a href="./TV_And_Audio_Products.html">TV and Audio</a></li>
+                        <li><a href="./Gaming_Products.html">Gaming</a></li>
+                        <li><a href="./Home_Appliance_Products.html">Home Appliances</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="./Contact_Us.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <img src="./Assets/cart.png" width="30px"  height="30px" alt="Shopping Cart">
+        </div>
+    </div>
+
+
+    <div class="card-wrapper">
+        <div class="card">
+            <!--Left Side-->
+            <div class="individual-product-img">
+                <div class="img-display">
+                    <img src="./Assets/Joystick - 600.jpg" alt="THRUSTMASTER T.Flight Hotas 4 Joystick & Throttle – Black">
+                </div>
+            </div>
+            <!--Right Side-->
+            <div class="indi-product-content">
+                <h2 class="product-title">THRUSTMASTER T.Flight Hotas 4 Joystick & Throttle – Black</h2>
+                <div class="indi-product-rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <span>4.0(25)</span>
+                </div>
+
+                <div class="indi-product-price">
+                    <p class="price-description">£69.99</p>
+                </div>
+
+                <div class="indi-product-detail">
+                    <!--<h2>About This Item</h2>-->
+                    <ul>
+                        <li>Main function: Primary flight control</li>
+                        <li>Compatible with PC & PS4</li>
+                        <li>12 programmable buttons</li>
+                        <li>Analogue controls</li>
+                        <li>Vibration feedback</li>
+                        <li>Ergonomic design</li>
+                        <li>USB 2.0</li>
+                    </ul>
+                </div>
+                <div class="purchase-info">
+                    <button type="button" class="Add-btn" onclick="openPopup()">
+                        Add to Shopping Basket
+                    </button>
+                    <div class="popup" id="popup">
+                        <img src="./Assets/Orange Check For Summary.png">
+                        <h2>Product successfully added to your shopping cart</h2>
+                        <a href="./All_Products.html">
+                        <button type="button" onclick="closePopup()">Continue Shopping</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="indi-product-information">
+        <h2>Product Information</h2>
+        <p>Ergonomically designed to imitate fighter aircraft controls, the Thrustmaster <b>T.Flight Hotas 4 Joystick & Throttle</b> adapts to all types of flights, whether that's aerial combat or a space adventure. </p>
+        <h3>Good To Know </h3>
+        <ul>
+            <li>To make the game even more realistic, you can make tiny adjustments to the controls. Add resistance, change the tilting lever, or rotate the handle. It's completely up to you. The weighted base keeps it stable while you're flying high and shooting down the baddies.</li>
+            <li>It's entirely programmable with 12 buttons, 5 axles and PS4 system buttons for your optimized PS4 flight experience. So you're ready to take to the skies</li>
+        </ul>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+ 
+    <script>
+        let popup = document.getElementById("popup");
+
+        function openPopup() {
+            popup.classList.add("open-popup");
+        }
+        function closePopup() {
+            popup.classList.remove("open-popup");
+        }
+    </script>
+
+    <footer class="footer">
+        <div class="footer_container">
+          <div class="bottom_row">
+            <div class="footer-column">
+              <img src="./Assets/Logo Landscape (Bebas Neue) -Best.png" alt="Official DIYMann Logo">
+              <p>&copy; Copyright 2023 DIYMann</p>
+            </div>
+            <div class="footer-column">
+              <h4>+44 2846 938650</h4>
+              <p>DIYMann</p>
+              <p>Spring Valley Industrial Estate</p>
+              <p>Coill Road</p>
+              <p>Douglas</p>
+              <p>IM2 2QR</p>
+      
+            </div>
+            <div class="footer-column">
+              <h4>Get Help</h4>
+              <ul>
+                  <li><a href="./FAQs.html">FAQS</a></li>
+                  <li><a href="./FAQs.html">Return Policy</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Follow Us</h4>
+              <div class="social_links">
+                <a href="https://www.facebook.com/facebook/"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/search?q=%23home"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+              </ul>
+            </div>
+      
+          </div>
+        </div>
+        </div>
+      
+      </footer>
+
+</body>
+
+</html>
